@@ -6,8 +6,8 @@ import os
 
 # Load the trained model
 MODEL_PATH = "model.pkl"
-if os.path.exists(MODEL_PATH):
-    with open(MODEL_PATH, "rb") as model_file:
+if os.path.exists("model.pkl"):
+    with open("model.pkl", "rb") as model_file:
         model = pickle.load("model.pkl")
 else:
     st.error("Model file not found. Please upload `model.pkl`.")
