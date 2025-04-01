@@ -8,7 +8,7 @@ import os
 MODEL_PATH = "model.pkl"
 if os.path.exists(MODEL_PATH):
     with open(MODEL_PATH, "rb") as model_file:
-        model = pickle.load(model_file)
+        model = pickle.load(model)
 else:
     st.error("Model file not found. Please upload `model.pkl`.")
     st.stop()
